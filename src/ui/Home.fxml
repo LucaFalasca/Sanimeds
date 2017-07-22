@@ -8,22 +8,24 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.shape.Rectangle?>
 
-<GridPane id="MainPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.HomeController">
-    <stylesheets>
-        <URL value="@home.css"/>
-    </stylesheets>
-    
-    <children>
-        <Rectangle fx:id="uno" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
-        <Rectangle fx:id="due" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
-    </children>
-    
-    <columnConstraints>
-        <ColumnConstraints minWidth="0.0" maxWidth="Infinity"/>  
-    </columnConstraints>
-    
-    <rowConstraints>
-        <RowConstraints maxHeight="200.0" minHeight="200.0"/> 
-        <RowConstraints maxHeight="Infinity" minHeight="0.0"/>  
-    </rowConstraints>
-</GridPane>
+<StackPane id="MainPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.HomeController">
+    <GridPane>
+        <stylesheets>
+            <URL value="@home.css"/>
+        </stylesheets>
+
+        <children>
+            <GridPane id="uno" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <GridPane id="due" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        </children>
+
+        <columnConstraints>
+            <ColumnConstraints minWidth="0.0" maxWidth="Infinity" hgrow="ALWAYS"/>  
+        </columnConstraints>
+
+        <rowConstraints>
+            <RowConstraints maxHeight="60.0" minHeight="60.0" vgrow="NEVER"/> 
+            <RowConstraints maxHeight="Infinity" minHeight="0.0" vgrow="ALWAYS"/>
+        </rowConstraints>
+    </GridPane>
+</StackPane>
