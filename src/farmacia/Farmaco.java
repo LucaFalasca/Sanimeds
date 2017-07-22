@@ -10,6 +10,10 @@ public class Farmaco {
     private RegimeRimborsabilita regimeRismborsabilita;
     private boolean brevetto;
 
+    public Farmaco(String denominazione) {
+        this.denominazione = denominazione;
+    }
+    
     public Farmaco(String denominazione, String azione, Produzione modalitaProduzione, FormaFarmaceutica formaFarmaceutica, regimeFornitura regimeForitura, RegimeRimborsabilita regimeRismborsabilita, boolean brevetto) {
         this.denominazione = denominazione;
         this.azione = azione;
@@ -19,11 +23,11 @@ public class Farmaco {
         this.regimeRismborsabilita = regimeRismborsabilita;
         this.brevetto = brevetto;
     }
-
+    
     public String getDenominazione() {
         return denominazione;
     }
-
+    
     public void setDenominazione(String denominazione) {
         this.denominazione = denominazione;
     }
