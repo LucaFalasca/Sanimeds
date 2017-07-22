@@ -5,3 +5,11 @@
 .mainFxmlClass {
 
 }
+
+#uno{
+    -fx-background-color: black;
+}
+
+#due{
+    -fx-background-color: white;
+}
