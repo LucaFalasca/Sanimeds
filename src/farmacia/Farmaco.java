@@ -1,6 +1,7 @@
 package farmacia;
 
 public class Farmaco {
+//kabiro
 
     private String denominazione;
     private String azione;
