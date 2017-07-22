@@ -17,7 +17,7 @@ public class Sanimeds extends Application {
         try {
             root = FXMLLoader.load(getClass().getResource("/ui/Home.fxml"));
         } catch (IOException ex) {
-            Logger.getLogger(Sanimeds.class.getName()).log(Level.SEVERE, null, ex);
+            ex.printStackTrace();
         }
         Scene scene = new Scene(root, 300, 250);
         
