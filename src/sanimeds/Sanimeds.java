@@ -1,8 +1,6 @@
 package sanimeds;
 
 import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -19,15 +17,14 @@ public class Sanimeds extends Application {
         } catch (IOException ex) {
             ex.printStackTrace();
         }
-        Scene scene = new Scene(root, 300, 250);
+        Scene scene = new Scene(root, 1100, 750);
         
         primaryStage.setTitle("Hello World!");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
-
+    
     public static void main(String[] args) {
         launch(args);
     }
-    
 }
